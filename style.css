@@ -112,9 +112,9 @@ div.block:hover{
     background-position: center;
 }
 
-@media (max-width: 1081){
+@media (max-width: 1080px){
     div.playarea{
-        width: 80%;
-        height: 80;
+        width: 80vw;
+        height: 50vh;
     }
 }
