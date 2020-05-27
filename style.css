@@ -42,7 +42,7 @@ div.block{
     border: 1.5px solid var(--primary);
     text-align: center;
     color: var(--primary);
-    font-size: 20px;
+    font-size: 80px;
     transition: 0.3s ease;
     /* background-color: var(--five); */
 }
@@ -101,13 +101,20 @@ div.block:hover{
 
 .circle{
     background-image: url(/img/circle.png);
-    background-size: 80%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 .cross{
     background-image: url(/img/close.png);
-    background-size: 80%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media (max-width: 1081){
+    div.playarea{
+        width: 80%;
+        height: 80;
+    }
 }

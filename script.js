@@ -13,6 +13,7 @@ function pick(event){
     event.target.classList.add(turn);
     round++;
 }
+
 area.forEach(block=> block.addEventListener('click', pick));
 
 
