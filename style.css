@@ -1,0 +1,70 @@
+:root{
+    --primary: #FDFFFC;
+    --seconadry: #235789;
+    --third: #C1292E;
+    --four: #F1D302;
+    --five: #161925;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font:20px "Raleway",sans-serif;
+    font-weight: 400;
+}
+div.container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 23, 23);
+    flex-direction: column;
+}
+div.playarea{
+    display: grid;
+    /* border: 1.5px solid var(--primary); */
+    height: 450px;
+    width: 450px;
+    grid-template-columns: auto auto auto;
+}
+div.block{
+    border: 1.5px solid var(--primary);
+    /* background-color: var(--five); */
+}
+div.block:nth-child(1){
+    /* background-color: red; */
+    border-left: 0;
+    border-top: 0;
+}
+div.block:nth-child(2){
+    border-top: 0;
+}
+div.block:nth-child(3){
+    border-right: 0;
+    border-top: 0;
+}
+div.block:nth-child(4), div.block:nth-child(7){
+border-left: 0;
+}
+div.block:nth-child(6){
+    border-right: 0;
+}
+div.block:nth-child(7){
+    border-bottom: 0;
+}
+div.block:nth-child(8){
+    border-bottom: 0;
+}
+div.block:nth-child(9){
+    border-bottom: 0;
+    border-right:0;
+}
+div.container>h1{
+    font-size: 30px;
+    margin-top: 30px;
+    color: var(--primary);
+}
+div.block:hover{
+    background-color: #282930;
+}
