@@ -24,7 +24,6 @@ btn.addEventListener('click', function(){
 
 
 
-
 function vibrate(){
     navigator.vibrate([500, 500]);
 }

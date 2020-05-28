@@ -23,8 +23,13 @@
             <div id="block_9" class="block fa"></div>
         </div>
 
-    <button onclick="vibrate()">RESET</button>
+    <button class="button" onclick="vibrate()">RESET</button>
     </div>
     <script src="script.js"></script>
+    <script>
+    function vibrate() {
+    navigator.vibrate([500, 500]);
+}
+    </script>
 </body>
 </html>
